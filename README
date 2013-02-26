@@ -3,3 +3,6 @@ WeeWikiPaint
 To build:
 - Assumes presence of Node.js
 - Run ./jake.sh
+
+To Build on Integration Machine (Also Linux):
+- Clone repository
