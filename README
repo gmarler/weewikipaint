@@ -1,7 +1,9 @@
 WeeWikiPaint
 
 To build:
-- Assumes presence of Node.js
+- Install Node.js [v0.8.4]
+- Install Git
+- Clone repository
 - Run ./jake.sh
 
 To Build on Integration Machine (Also Linux):

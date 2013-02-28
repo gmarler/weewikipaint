@@ -1,0 +1,371 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'jake',
+1 verbose cli   'jshint',
+1 verbose cli   'nodeunit' ]
+2 info using npm@1.1.45
+3 info using node@v0.8.4
+4 verbose config file /home/gmarler/.npmrc
+5 verbose config file /usr/local/etc/npmrc
+6 verbose config file /usr/local/lib/node_modules/npm/npmrc
+7 verbose read json /usr/local/lib/package.json
+8 verbose read json /usr/local/lib/package.json
+9 verbose cache add [ 'jake', null ]
+10 silly cache add name=undefined spec="jake" args=["jake",null]
+11 verbose parsed url { pathname: 'jake', path: 'jake', href: 'jake' }
+12 verbose cache add [ 'jshint', null ]
+13 silly cache add name=undefined spec="jshint" args=["jshint",null]
+14 verbose parsed url { pathname: 'jshint', path: 'jshint', href: 'jshint' }
+15 verbose cache add [ 'nodeunit', null ]
+16 silly cache add name=undefined spec="nodeunit" args=["nodeunit",null]
+17 verbose parsed url { pathname: 'nodeunit', path: 'nodeunit', href: 'nodeunit' }
+18 silly lockFile c8d99c2f-jake jake
+19 verbose lock jake /home/gmarler/.npm/c8d99c2f-jake.lock
+20 silly lockFile da5c03cb-jshint jshint
+21 verbose lock jshint /home/gmarler/.npm/da5c03cb-jshint.lock
+22 silly lockFile 10f0edac-nodeunit nodeunit
+23 verbose lock nodeunit /home/gmarler/.npm/10f0edac-nodeunit.lock
+24 silly lockFile c8d99c2f-jake jake
+25 silly lockFile da5c03cb-jshint jshint
+26 silly lockFile 10f0edac-nodeunit nodeunit
+27 verbose addNamed [ 'jake', '' ]
+28 verbose addNamed [ null, '' ]
+29 silly lockFile 407019af-jake jake@
+30 verbose lock jake@ /home/gmarler/.npm/407019af-jake.lock
+31 verbose addNamed [ 'jshint', '' ]
+32 verbose addNamed [ null, '' ]
+33 silly lockFile a02a2468-jshint jshint@
+34 verbose lock jshint@ /home/gmarler/.npm/a02a2468-jshint.lock
+35 silly addNameRange { name: 'jake', range: '', hasData: false }
+36 verbose addNamed [ 'nodeunit', '' ]
+37 verbose addNamed [ null, '' ]
+38 silly lockFile a2ad5191-nodeunit nodeunit@
+39 verbose lock nodeunit@ /home/gmarler/.npm/a2ad5191-nodeunit.lock
+40 silly addNameRange { name: 'jshint', range: '', hasData: false }
+41 silly addNameRange { name: 'nodeunit', range: '', hasData: false }
+42 verbose url raw jake
+43 verbose url resolving [ 'https://registry.npmjs.org/', './jake' ]
+44 verbose url resolved https://registry.npmjs.org/jake
+45 info retry registry request attempt 1 at 18:56:08
+46 verbose etag "4PCCFZQBUDZ029DRIMD7K7M42"
+47 http GET https://registry.npmjs.org/jake
+48 verbose url raw jshint
+49 verbose url resolving [ 'https://registry.npmjs.org/', './jshint' ]
+50 verbose url resolved https://registry.npmjs.org/jshint
+51 info retry registry request attempt 1 at 18:56:08
+52 verbose etag "BCR3H5CG7PHK4ODF49WGR4BCT"
+53 http GET https://registry.npmjs.org/jshint
+54 verbose url raw nodeunit
+55 verbose url resolving [ 'https://registry.npmjs.org/', './nodeunit' ]
+56 verbose url resolved https://registry.npmjs.org/nodeunit
+57 info retry registry request attempt 1 at 18:56:08
+58 verbose etag "1O2FQCP5A08K8HDUZ4LUX4OMB"
+59 http GET https://registry.npmjs.org/nodeunit
+60 http 304 https://registry.npmjs.org/jshint
+61 silly registry.get cb [ 304,
+61 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+61 silly registry.get     etag: '"BCR3H5CG7PHK4ODF49WGR4BCT"',
+61 silly registry.get     date: 'Wed, 27 Feb 2013 23:56:08 GMT',
+61 silly registry.get     'content-length': '0' } ]
+62 verbose etag jshint from cache
+63 silly addNameRange number 2 { name: 'jshint', range: '', hasData: true }
+64 silly addNameRange versions [ 'jshint',
+64 silly addNameRange   [ '0.1.8',
+64 silly addNameRange     '0.1.9',
+64 silly addNameRange     '0.2.0',
+64 silly addNameRange     '0.2.1',
+64 silly addNameRange     '0.2.2',
+64 silly addNameRange     '0.2.3',
+64 silly addNameRange     '0.3.0',
+64 silly addNameRange     '0.3.1',
+64 silly addNameRange     '0.4.0',
+64 silly addNameRange     '0.5.0',
+64 silly addNameRange     '0.5.1',
+64 silly addNameRange     '0.5.2',
+64 silly addNameRange     '0.5.3',
+64 silly addNameRange     '0.5.4',
+64 silly addNameRange     '0.5.5',
+64 silly addNameRange     '0.5.6',
+64 silly addNameRange     '0.5.7',
+64 silly addNameRange     '0.5.8',
+64 silly addNameRange     '0.5.9',
+64 silly addNameRange     '0.6.0',
+64 silly addNameRange     '0.6.1',
+64 silly addNameRange     '0.6.2',
+64 silly addNameRange     '0.6.3',
+64 silly addNameRange     '0.7.0',
+64 silly addNameRange     '0.7.1',
+64 silly addNameRange     '0.7.2',
+64 silly addNameRange     '0.7.3',
+64 silly addNameRange     '0.8.0',
+64 silly addNameRange     '0.8.1',
+64 silly addNameRange     '0.8.2',
+64 silly addNameRange     '0.9.0',
+64 silly addNameRange     '0.9.1',
+64 silly addNameRange     '1.0.0' ] ]
+65 verbose addNamed [ 'jshint', '1.0.0' ]
+66 verbose addNamed [ '1.0.0', '1.0.0' ]
+67 silly lockFile e8e33945-jshint-1-0-0 jshint@1.0.0
+68 verbose lock jshint@1.0.0 /home/gmarler/.npm/e8e33945-jshint-1-0-0.lock
+69 verbose read json /home/gmarler/.npm/jshint/1.0.0/package/package.json
+70 silly lockFile e8e33945-jshint-1-0-0 jshint@1.0.0
+71 silly lockFile a02a2468-jshint jshint@
+72 http 304 https://registry.npmjs.org/jake
+73 silly registry.get cb [ 304,
+73 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+73 silly registry.get     etag: '"4PCCFZQBUDZ029DRIMD7K7M42"',
+73 silly registry.get     date: 'Wed, 27 Feb 2013 23:56:08 GMT',
+73 silly registry.get     'content-length': '0' } ]
+74 verbose etag jake from cache
+75 http 304 https://registry.npmjs.org/nodeunit
+76 silly registry.get cb [ 304,
+76 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+76 silly registry.get     etag: '"1O2FQCP5A08K8HDUZ4LUX4OMB"',
+76 silly registry.get     date: 'Wed, 27 Feb 2013 23:56:08 GMT',
+76 silly registry.get     'content-length': '0' } ]
+77 verbose etag nodeunit from cache
+78 silly addNameRange number 2 { name: 'nodeunit', range: '', hasData: true }
+79 silly addNameRange versions [ 'nodeunit',
+79 silly addNameRange   [ '0.1.0',
+79 silly addNameRange     '0.1.1',
+79 silly addNameRange     '0.1.2',
+79 silly addNameRange     '0.2.0',
+79 silly addNameRange     '0.2.1',
+79 silly addNameRange     '0.2.2',
+79 silly addNameRange     '0.2.3',
+79 silly addNameRange     '0.2.4',
+79 silly addNameRange     '0.3.1',
+79 silly addNameRange     '0.4.0',
+79 silly addNameRange     '0.5.0',
+79 silly addNameRange     '0.5.1',
+79 silly addNameRange     '0.5.2',
+79 silly addNameRange     '0.5.3',
+79 silly addNameRange     '0.5.4',
+79 silly addNameRange     '0.5.5',
+79 silly addNameRange     '0.6.0',
+79 silly addNameRange     '0.6.1',
+79 silly addNameRange     '0.6.2',
+79 silly addNameRange     '0.6.3',
+79 silly addNameRange     '0.6.4',
+79 silly addNameRange     '0.7.0',
+79 silly addNameRange     '0.7.1',
+79 silly addNameRange     '0.7.2',
+79 silly addNameRange     '0.7.3',
+79 silly addNameRange     '0.7.4' ] ]
+80 verbose addNamed [ 'nodeunit', '0.7.4' ]
+81 verbose addNamed [ '0.7.4', '0.7.4' ]
+82 silly lockFile 7554072e-nodeunit-0-7-4 nodeunit@0.7.4
+83 verbose lock nodeunit@0.7.4 /home/gmarler/.npm/7554072e-nodeunit-0-7-4.lock
+84 silly addNameRange number 2 { name: 'jake', range: '', hasData: true }
+85 silly addNameRange versions [ 'jake',
+85 silly addNameRange   [ '0.1.0',
+85 silly addNameRange     '0.1.2',
+85 silly addNameRange     '0.1.3',
+85 silly addNameRange     '0.1.4',
+85 silly addNameRange     '0.1.5',
+85 silly addNameRange     '0.1.6',
+85 silly addNameRange     '0.1.7',
+85 silly addNameRange     '0.1.8',
+85 silly addNameRange     '0.1.9',
+85 silly addNameRange     '0.1.10',
+85 silly addNameRange     '0.1.11',
+85 silly addNameRange     '0.1.12',
+85 silly addNameRange     '0.1.13',
+85 silly addNameRange     '0.1.14',
+85 silly addNameRange     '0.1.16',
+85 silly addNameRange     '0.1.17',
+85 silly addNameRange     '0.1.18',
+85 silly addNameRange     '0.1.19',
+85 silly addNameRange     '0.1.20',
+85 silly addNameRange     '0.1.21',
+85 silly addNameRange     '0.1.22',
+85 silly addNameRange     '0.2.2',
+85 silly addNameRange     '0.2.3',
+85 silly addNameRange     '0.2.6',
+85 silly addNameRange     '0.2.7',
+85 silly addNameRange     '0.2.8',
+85 silly addNameRange     '0.2.9',
+85 silly addNameRange     '0.2.10',
+85 silly addNameRange     '0.2.11',
+85 silly addNameRange     '0.2.12',
+85 silly addNameRange     '0.2.15',
+85 silly addNameRange     '0.2.18',
+85 silly addNameRange     '0.2.19',
+85 silly addNameRange     '0.2.20',
+85 silly addNameRange     '0.2.21',
+85 silly addNameRange     '0.2.22',
+85 silly addNameRange     '0.2.23',
+85 silly addNameRange     '0.2.24',
+85 silly addNameRange     '0.2.25',
+85 silly addNameRange     '0.2.27',
+85 silly addNameRange     '0.2.28',
+85 silly addNameRange     '0.2.29',
+85 silly addNameRange     '0.2.30',
+85 silly addNameRange     '0.2.31',
+85 silly addNameRange     '0.2.32',
+85 silly addNameRange     '0.2.33',
+85 silly addNameRange     '0.2.35',
+85 silly addNameRange     '0.3.1',
+85 silly addNameRange     '0.3.2',
+85 silly addNameRange     '0.3.3',
+85 silly addNameRange     '0.3.4',
+85 silly addNameRange     '0.3.5',
+85 silly addNameRange     '0.3.6',
+85 silly addNameRange     '0.3.7',
+85 silly addNameRange     '0.3.8',
+85 silly addNameRange     '0.3.9',
+85 silly addNameRange     '0.3.10',
+85 silly addNameRange     '0.3.11',
+85 silly addNameRange     '0.3.12',
+85 silly addNameRange     '0.3.13',
+85 silly addNameRange     '0.3.14',
+85 silly addNameRange     '0.3.15',
+85 silly addNameRange     '0.3.16',
+85 silly addNameRange     '0.3.17',
+85 silly addNameRange     '0.4.1',
+85 silly addNameRange     '0.4.2',
+85 silly addNameRange     '0.5.1',
+85 silly addNameRange     '0.5.2',
+85 silly addNameRange     '0.5.3',
+85 silly addNameRange     '0.5.4',
+85 silly addNameRange     '0.5.5',
+85 silly addNameRange     '0.5.6',
+85 silly addNameRange     '0.5.7',
+85 silly addNameRange     '0.5.8' ] ]
+86 verbose addNamed [ 'jake', '0.5.8' ]
+87 verbose addNamed [ '0.5.8', '0.5.8' ]
+88 silly lockFile 641ff225-jake-0-5-8 jake@0.5.8
+89 verbose lock jake@0.5.8 /home/gmarler/.npm/641ff225-jake-0-5-8.lock
+90 verbose read json /home/gmarler/.npm/nodeunit/0.7.4/package/package.json
+91 verbose read json /home/gmarler/.npm/jake/0.5.8/package/package.json
+92 silly lockFile 7554072e-nodeunit-0-7-4 nodeunit@0.7.4
+93 silly lockFile 641ff225-jake-0-5-8 jake@0.5.8
+94 silly lockFile a2ad5191-nodeunit nodeunit@
+95 silly lockFile 407019af-jake jake@
+96 silly resolved [ { name: 'jshint',
+96 silly resolved     version: '1.0.0',
+96 silly resolved     homepage: 'http://jshint.com/',
+96 silly resolved     description: 'Static analysis tool for JavaScript',
+96 silly resolved     author:
+96 silly resolved      { name: 'Anton Kovalyov',
+96 silly resolved        email: 'anton@kovalyov.net',
+96 silly resolved        url: 'http://anton.kovalyov.net/' },
+96 silly resolved     bin: { jshint: './bin/jshint' },
+96 silly resolved     scripts: { test: 'node ./make.js test', lint: 'node ./make.js lint' },
+96 silly resolved     main: './src/stable/jshint.js',
+96 silly resolved     dependencies:
+96 silly resolved      { esprima: 'https://github.com/ariya/esprima/tarball/master',
+96 silly resolved        shelljs: '*',
+96 silly resolved        underscore: '*',
+96 silly resolved        peakle: '*',
+96 silly resolved        cli: '0.4.3',
+96 silly resolved        minimatch: '0.x.x' },
+96 silly resolved     devDependencies:
+96 silly resolved      { jshint: '*',
+96 silly resolved        shelljs: '*',
+96 silly resolved        browserify: '*',
+96 silly resolved        coveraje: '*',
+96 silly resolved        nodeunit: '*',
+96 silly resolved        sinon: '*' },
+96 silly resolved     preferGlobal: true,
+96 silly resolved     readme: 'JSHint, A Static Code Analysis Tool for JavaScript\n==================================================\n\nJSHint is a community-driven tool to detect errors and potential problems in\nJavaScript code and to enforce your team\'s coding conventions. We made JSHint\nvery flexible so you can easily adjust it to your particular coding guidelines\nand the environment you expect your code to execute in.\n\nOur goal is to help JavaScript developers write complex programs without\nworrying about typos and language gotchas.\n\nWe believe that static code analysis programs—as well as other code quality\ntools—are important and beneficial to the JavaScript community and, thus,\nshould not alienate their users.\n\nFor general usage information, visit our website:\n[http://jshint.com/](http://jshint.com/).\n\nJSHint Fundraiser / Bug Bounties\n--------------------------------\n\nWe\'re [running a fundraiser](https://www.bountysource.com/#fundraisers/91-jshint)\nfor JSHint! If JSHint helps you in your day-to-day development, please consider\ndonating.  All money raised on this page will be used as monetary rewards for\nfixing JSHint bugs and implementing new features. Our hope is to introduce more\ndevelopers to JSHint hacking and boost its development.\n\n**Rules**:\n\n1. All funds (aside from fees) will be used only to fund bounties.\n2. If core team ends up fixing bounty bugs, the reward will be donated to the Electronic Frontier Foundation.\n3. Before marking bugs as fixed, all patches must be reviewed by a core team member.\n\nThanks!\n\nReporting a bug\n---------------\n\nTo report a bug simply create a\n[new GitHub Issue](https://github.com/jshint/jshint/issues/new) and describe\nyour problem or suggestion. We welcome all kind of feedback regarding\nJSHint including but not limited to:\n\n * When JSHint doesn\'t work as expected\n * When JSHint complains about valid JavaScript code that works in all browsers\n * When you simply want a new option or feature\n\nBefore reporting a bug look around to see if there are any open or closed tickets\nthat cover your issue. And remember the wisdom: pull request > bug report > tweet.\n\nInstallation\n------------\n\nYou can install JSHint via NPM:\n\n\tnpm install jshint -g\n\nWe also provide platform wrappers for Rhino, JavaScriptCore and Windows Script\nHost. To use them, clone this repo and run our build command:\n\n\tnode make.js\n\nUsage\n-----\n\n    jshint -h\n\nYou can also require JSHint itself as a module.\n\n    var jshint = require(\'jshint\');\n\nNote: If you are using npm v1.x be sure to install jshint locally (without the -g\nflag) or link it globally.\n\nCustom Reporters\n----------------\n\nSpecify a custom reporter module (see example/reporter.js).\n\n    --reporter path/to/reporter.js\n\nUse a jslint compatible xml reporter.\n\n    --jslint-reporter\n\nShow additional non-error data generated by jshint (unused globals etc).\n\n    --show-non-errors\n\nConfiguration Options\n---------------------\n\n**Note:** This behavior described below is very different from versions\nprior to `0.6`.\n\nThe CLI uses the default options that come with JSHint. Only one extra\noption is unique to the CLI version of JSHint: `globals` allows you to\ndefine an object of globals that get ignored for every file.\n\nTo have your own configuration apply, there are several methods you can\nuse:\n\n### Specify Manually\n\nSetting the `--config=/path/to/your/config` command line option to specify\nyour own configuration file outside of the directory tree for your project.\n\n### Within your Project\'s Directory Tree\n\nWhen the CLI is called, and a configuration file isn\'t specified already,\n`node-jshint` will attempt to locate one for you starting in `pwd`. (or\n"present working directory") If this does not yield a `.jshintrc` file,\nit will move one level up (`..`) the directory tree all the way up to\nthe filesystem root. If a file is found, it stops immediately and uses\nthat set of configuration.\n\nThis setup allows you to set up **one** configuration file for your entire\nproject. (place it in the root folder) As long as you run `jshint` from\nanywhere within your project directory tree, the same configuration file\nwill be used.\n\n### Home Directory\n\nIf all the methods above do not yield a `.jshintrc` to use, the last place\nthat will be checked is your user\'s `$HOME` directory.\n\n## File Extensions\n\nDefault extension for files is ".js". If you want to use JSHint with other\nfile extensions (.json), you need to pass this extra extension as an\noption:\n\n    --extra-ext .json\n\n## Ignoring Files and Directories\n\nIf there is a .jshintignore file in your project\'s directory tree, (also\nprovided you run `jshint` from within your project\'s directory) then any\ndirectories or files specified will be skipped over. (behaves just like\na `.gitignore` file)\n\n**Note:** Pattern matching uses minimatch, with the nocase\n[option](https://github.com/isaacs/minimatch). When there is no match,\nit performs a left side match (when no forward slashes present and path\nis a directory).\n\nUsing JSHint as a library\n-------------------------\n\nIt is easy to use JSHint as a JavaScript library. Just install the package\nwith NPM and, in your code, import a global `JSHINT` function:\n\n    var JSHINT = require("jshint").JSHINT;\n\nThis function takes two parameters. The first parameter is either a string\nor an array of strings. If it is a string, it will be split on \'\\n\' or\n\'\\r\'. If it is an array of strings, it is assumed that each string\nrepresents one line. The source can be a JavaScript text or a JSON text.\n\nThe second parameter is an optional object of options which control the\noperation of JSHINT. Most of the options are booleans: they are all\noptional and have a default value of false.\n\nThe third parameter is an object of global variables, with keys as names\nand a boolean value to determine if they are assignable.\n\nIf it checks out, JSHINT returns true. Otherwise, it returns false.\n\nIf false, you can inspect JSHINT.errors to find out the problems.\nJSHINT.errors is an array of objects containing these members:\n\n    {\n      line      : The line (relative to 1) at which the lint was found\n      character : The character (relative to 1) at which the lint was found\n      reason    : The problem\n      evidence  : The text line in which the problem occured\n      scope     : The scope of the problem.\n      raw       : The raw message before the details were inserted\n      a         : The first detail\n      b         : The second detail\n      c         : The third detail\n      d         : The fourth detail\n    }\n\nIf a fatal error was found, a null will be the last element of the\nJSHINT.errors array.\n\nYou can request a data structure which contains JSHint\'s results.\n\n    var myData = JSHINT.data();\n\nIt returns a structure with this form:\n\n    {\n      errors: [\n        {\n          line       : NUMBER,\n          character  : NUMBER,\n          reason     : STRING,\n          evidence   : STRING\n        }\n      ],\n        functions: [\n        name         : STRING,\n        line         : NUMBER,\n        character    : NUMBER,\n        last         : NUMBER,\n        lastcharacter: NUMBER,\n        param        : [ STRING ],\n        closure      : [ STRING ],\n        var          : [ STRING ],\n        exception    : [ STRING ],\n        outer        : [ STRING ],\n        unused       : [ STRING ],\n        global       : [ STRING ],\n        label        : [ STRING ]\n      ],\n      globals: [\n        STRING\n      ],\n      member: {\n        STRING: NUMBER\n      },\n      unused: [\n        {\n          name       : STRING,\n          line       : NUMBER\n        }\n      ],\n      implieds: [\n        {\n          name: STRING,\n          line: NUMBER\n        }\n      ],\n      urls: [\n        STRING\n      ],\n      json: BOOLEAN\n    }\n\nEmpty array will not be included.\n\n\nFAQ\n---\n\n#### How do I turn off "mixed tabs and spaces" warning?\n\nIf you\'re using so-called [smart tabs](http://www.emacswiki.org/SmartTabs)\nthen we have an option `smarttabs` for you. Otherwise, your solution is to\nrun JSHint with a custom reporter that discards any warnings you don\'t like.\nFor example, this [example reporter](https://gist.github.com/3885619)\ndiscards all warnings about mixed tabs and spaces.\n\nContributing\n------------\n\nLook for a file named `CONTRIBUTING.md` in this repository. It contains our\ncontributing guidelines. We also have\n[a mailing list](http://groups.google.com/group/jshint/).\n\nLicense\n-------\n\nJSHint is distributed under the MIT License. One file and one file only\n(src/stable/jshint.js) is distributed under the slightly modified MIT License.\n\nAttribution\n-----------\n\nCore Team members:\n\n * [Anton Kovalyov](http://anton.kovalyov.net/) ([@valueof](http://twitter.com/valueof))\n * [Wolfgang Kluge](http://klugesoftware.de/) ([blog](http://gehirnwindung.de/))\n * [Josh Perez](http://www.goatslacker.com/) ([@goatslacker](http://twitter.com/goatslacker))\n * [Brent Lintner](http://brentlintner.heroku.com/) ([@brentlintner](http://twitter.com/brentlintner))\n\nMaintainer: Anton Kovalyov\n\nThank you!\n----------\n\nWe really appreciate all kind of feedback and contributions. Thanks for using and supporting JSHint!\n',
+96 silly resolved     _id: 'jshint@1.0.0',
+96 silly resolved     _from: 'jshint' },
+96 silly resolved   { name: 'nodeunit',
+96 silly resolved     description: 'Easy unit testing for node.js and the browser.',
+96 silly resolved     maintainers: [ [Object] ],
+96 silly resolved     contributors:
+96 silly resolved      [ [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object],
+96 silly resolved        [Object] ],
+96 silly resolved     version: '0.7.4',
+96 silly resolved     repository: { type: 'git', url: 'http://github.com/caolan/nodeunit.git' },
+96 silly resolved     devDependencies: { 'uglify-js': '>=1.1.0', should: '>=0.4.2' },
+96 silly resolved     bugs: { url: 'http://github.com/caolan/nodeunit/issues' },
+96 silly resolved     licenses: [ [Object] ],
+96 silly resolved     directories: { lib: './lib', doc: './doc', man: './man1' },
+96 silly resolved     bin: { nodeunit: './bin/nodeunit' },
+96 silly resolved     dependencies: { tap: '>=0.2.3' },
+96 silly resolved     man: [ '/home/gmarler/gitwork/weewikipaint/man1/nodeunit.1' ],
+96 silly resolved     readme: 'Nodeunit\n========\n\nSimple syntax, powerful tools. Nodeunit provides easy async unit testing for\nnode.js and the browser.\n\n* Simple to use\n* Just export the tests from a module\n* Works with node.js and in the browser.\n* Helps you avoid common pitfalls when testing asynchronous code\n* Easy to add test cases with setUp and tearDown functions if you wish\n* Flexible reporters for custom output, built-in support for HTML and jUnit XML\n* Allows the use of mocks and stubs\n\n__Contributors__\n\n* [alexgorbatchev](https://github.com/alexgorbatchev)\n* [alexkwolfe](https://github.com/alexkwolfe)\n* [azatoth](https://github.com/azatoth)\n* [kadirpekel](https://github.com/kadirpekel)\n* [lambdalisue](https://github.com/lambdalisue)\n* [luebken](https://github.com/luebken)\n* [orlandov](https://github.com/orlandov)\n* [Sannis](https://github.com/Sannis)\n* [sstephenson](https://github.com/sstephenson)\n* [thegreatape](https://github.com/thegreatape)\n* [mmalecki](https://github.com/mmalecki)\n* and thanks to [cjohansen](https://github.com/cjohansen) for input and advice\n  on implementing setUp and tearDown functions. See\n  [cjohansen\'s fork](https://github.com/cjohansen/nodeunit).\n\nAlso, check out gerad\'s [nodeunit-dsl](https://github.com/gerad/nodeunit-dsl)\nproject, which implements a \'pretty dsl on top of nodeunit\'.\n\nMore contributor information can be found in the\n[CONTRIBUTORS.md](https://github.com/caolan/nodeunit/blob/master/CONTRIBUTORS.md)\nfile.\n\nUsage\n-----\n\nHere is an example unit test module:\n\n    exports.testSomething = function(test){\n        test.expect(1);\n        test.ok(true, "this assertion should pass");\n        test.done();\n    };\n\n    exports.testSomethingElse = function(test){\n        test.ok(false, "this assertion should fail");\n        test.done();\n    };\n\nWhen run using the included test runner, this will output the following:\n\n<img src="https://github.com/caolan/nodeunit/raw/master/img/example_fail.png" />\n\nInstallation\n------------\n\nThere are two options for installing nodeunit:\n\n1. Clone / download nodeunit from [github](https://github.com/caolan/nodeunit),\n   then:\n\n    make && sudo make install\n\n2. Install via npm:\n\n    npm install nodeunit\n\nAPI Documentation\n-----------------\n\nNodeunit uses the functions available in the node.js\n[assert module](http://nodejs.org/docs/v0.4.2/api/assert.html):\n\n* __ok(value, [message])__ - Tests if value is a true value.\n* __equal(actual, expected, [message])__ - Tests shallow, coercive equality\n  with the equal comparison operator ( == ).\n* __notEqual(actual, expected, [message])__ - Tests shallow, coercive\n  non-equality with the not equal comparison operator ( != ).\n* __deepEqual(actual, expected, [message])__ - Tests for deep equality.\n* __notDeepEqual(actual, expected, [message])__ - Tests for any deep\n  inequality.\n* __strictEqual(actual, expected, [message])__ - Tests strict equality, as\n  determined by the strict equality operator ( === )\n* __notStrictEqual(actual, expected, [message])__ - Tests strict non-equality,\n  as determined by the strict not equal operator ( !== )\n* __throws(block, [error], [message])__ - Expects block to throw an error.\n* __doesNotThrow(block, [error], [message])__ - Expects block not to throw an\n  error.\n* __ifError(value)__ - Tests if value is not a false value, throws if it is a\n  true value. Useful when testing the first argument, error in callbacks.\n\nNodeunit also provides the following functions within tests:\n\n* __expect(amount)__ - Specify how many assertions are expected to run within a\n  test. Very useful for ensuring that all your callbacks and assertions are\n  run.\n* __done()__ - Finish the current test function, and move on to the next. ALL\n  tests should call this!\n\nNodeunit aims to be simple and easy to learn. This is achieved through using\nexisting structures (such as node.js modules) to maximum effect, and reducing\nthe API where possible, to make it easier to digest.\n\nTests are simply exported from a module, but they are still run in the order\nthey are defined.\n\n__Note:__ Users of old nodeunit versions may remember using ok, equals and same\nin the style of qunit, instead of the assert functions above. These functions\nstill exist for backwards compatibility, and are simply aliases to their assert\nmodule counterparts.\n\n\nAsynchronous Testing\n--------------------\n\nWhen testing asynchronous code, there are a number of sharp edges to watch out\nfor. Thankfully, nodeunit is designed to help you avoid as many of these\npitfalls as possible. For the most part, testing asynchronous code in nodeunit\n_just works_.\n\n\n### Tests run in series\n\nWhile running tests in parallel seems like a good idea for speeding up your\ntest suite, in practice I\'ve found it means writing much more complicated\ntests. Because of node\'s module cache, running tests in parallel means mocking\nand stubbing is pretty much impossible. One of the nicest things about testing\nin javascript is the ease of doing stubs:\n\n    var _readFile = fs.readFile;\n    fs.readFile = function(path, callback){\n        // its a stub!\n    };\n    // test function that uses fs.readFile\n\n    // we\'re done\n    fs.readFile = _readFile;\n\nYou cannot do this when running tests in parallel. In order to keep testing as\nsimple as possible, nodeunit avoids it. Thankfully, most unit-test suites run\nfast anyway.\n\n\n### Explicit ending of tests\n\nWhen testing async code its important that tests end at the correct point, not\njust after a given number of assertions. Otherwise your tests can run short,\nending before all assertions have completed. Its important to detect too\nmany assertions as well as too few. Combining explicit ending of tests with\nan expected number of assertions helps to avoid false test passes, so be sure\nto use the test.expect() method at the start of your test functions, and\ntest.done() when finished.\n\n\nGroups, setUp and tearDown\n--------------------------\n\nNodeunit allows the nesting of test functions:\n\n    exports.test1 = function (test) {\n        ...\n    }\n\n    exports.group = {\n        test2: function (test) {\n            ...\n        },\n        test3: function (test) {\n            ...\n        }\n    }\n\nThis would be run as:\n\n    test1\n    group - test2\n    group - test3\n\nUsing these groups, Nodeunit allows you to define a `setUp` function, which is\nrun before each test, and a `tearDown` function, which is run after each test\ncalls `test.done()`:\n\n    module.exports = {\n        setUp: function (callback) {\n            this.foo = \'bar\';\n            callback();\n        },\n        tearDown: function (callback) {\n            // clean up\n            callback();\n        },\n        test1: function (test) {\n            test.equals(this.foo, \'bar\');\n            test.done();\n        }\n    };\n\nIn this way, its possible to have multiple groups of tests in a module, each\ngroup with its own setUp and tearDown functions.\n\n\nRunning Tests\n-------------\n\nNodeunit comes with a basic command-line test runner, which can be installed\nusing \'sudo make install\'. Example usage:\n\n    nodeunit testmodule1.js testfolder [...]\n\nThe default test reporter uses color output, because I think that\'s more fun :) I\nintend to add a no-color option in future. To give you a feeling of the fun you\'ll\nbe having writing tests, lets fix the example at the start of the README:\n\n<img src="https://github.com/caolan/nodeunit/raw/master/img/example_pass.png" />\n\nAhhh, Doesn\'t that feel better?\n\nWhen using the included test runner, it will exit using the failed number of\nassertions as the exit code. Exiting with 0 when all tests pass.\n\n\n### Command-line Options\n\n* __--reporter FILE__ - you can set the test reporter to a custom module or\non of the modules in nodeunit/lib/reporters, when omitted, the default test runner\nis used.\n* __--list-reporters__ - list available build-in reporters.\n* __--config FILE__ - load config options from a JSON file, allows\nthe customisation of color schemes for the default test reporter etc. See\nbin/nodeunit.json for current available options.\n* __--version__ or __-v__ - report nodeunit version\n* __--help__ - show nodeunit help\n\n\nRunning tests in the browser\n----------------------------\n\nNodeunit tests can also be run inside the browser. For example usage, see\nthe examples/browser folder. The basic syntax is as follows:\n\n__test.html__\n\n    <html>\n      <head>\n        <title>Example Test Suite</title>\n        <link rel="stylesheet" href="nodeunit.css" type="text/css" />\n        <script src="nodeunit.js"></script>\n        <script src="suite1.js"></script>\n        <script src="suite2.js"></script>\n      </head>\n      <body>\n        <h1 id="nodeunit-header>Example Test Suite</h1>\n        <script>\n          nodeunit.run({\n            \'Suite One\': suite1,\n            \'Suite Two\': suite2\n          });\n        </script>\n      </body>\n    </html>\n\nHere, suite1 and suite2 are just object literals containing test functions or\ngroups, as would be returned if you did require(\'test-suite\') in node.js:\n\n__suite1.js__\n\n    this.suite1 = {\n        \'example test\': function (test) {\n            test.ok(true, \'everything is ok\');\n            test.done();\n        }\n    };\n\nIf you wish to use a commonjs format for your test suites (using exports), it is\nup to you to define the commonjs tools for the browser. There are a number of\nalternatives and its important it fits with your existing code, which is\nwhy nodeunit does not currently provide this out of the box.\n\nIn the example above, the tests will run when the page is loaded.\n\nThe browser-version of nodeunit.js is created in dist/browser when you do, \'make\nbrowser\'. You\'ll need [UglifyJS](https://github.com/mishoo/UglifyJS) installed in\norder for it to automatically create nodeunit.min.js.\n\n\nAdding nodeunit to Your Projects\n--------------------------------\n\nIf you don\'t want people to have to install the nodeunit command-line tool,\nyou\'ll want to create a script that runs the tests for your project with the\ncorrect require paths set up. Here\'s an example test script, that assumes you\nhave nodeunit in a suitably located node_modules directory.\n\n    #!/usr/bin/env node\n    var reporter = require(\'nodeunit\').reporters.default;\n    reporter.run([\'test\']);\n\nIf you\'re using git, you might find it useful to include nodeunit as a\nsubmodule. Using submodules makes it easy for developers to download nodeunit\nand run your test suite, without cluttering up your repository with\nthe source code. To add nodeunit as a git submodule do the following:\n\n    git submodule add git://github.com/caolan/nodeunit.git node_modules/nodeunit\n\nThis will add nodeunit to the node_modules folder of your project. Now, when\ncloning the repository, nodeunit can be downloaded by doing the following:\n\n    git submodule init\n    git submodule update\n\nLet\'s update the test script above with a helpful hint on how to get nodeunit,\nif its missing:\n\n    #!/usr/bin/env node\n    try {\n        var reporter = require(\'nodeunit\').reporters.default;\n    }\n    catch(e) {\n        console.log("Cannot find nodeunit module.");\n        console.log("You can download submodules for this project by doing:");\n        console.log("");\n        console.log("    git submodule init");\n        console.log("    git submodule update");\n        console.log("");\n        process.exit();\n    }\n\n    process.chdir(__dirname);\n    reporter.run([\'test\']);\n\nNow if someone attempts to run your test suite without nodeunit installed they\nwill be prompted to download the submodules for your project.\n\n\nBuilt-in Test Reporters\n-----------------------\n\n* __default__ - The standard reporter seen in the nodeunit screenshots\n* __minimal__ - Pretty, minimal output, shows errors and progress only\n* __html__ - Outputs a HTML report to stdout\n* __junit__ - Creates jUnit compatible XML reports, which can be used with\n  continuous integration tools such as [Hudson](http://hudson-ci.org/).\n* __machineout__ - Simple reporter for machine analysis. There is [nodeunit.vim](https://github.com/lambdalisue/nodeunit.vim)\n  which is useful for TDD on VIM\n\n\nWriting a Test Reporter\n---------------------\n\nNodeunit exports runTest(fn, options), runModule(mod, options) and\nrunFiles(paths, options). You\'ll most likely want to run test suites from\nfiles, which can be done using the latter function. The _options_ argument can\ncontain callbacks which run during testing. Nodeunit provides the following\ncallbacks:\n\n* __moduleStart(name)__ - called before a module is tested\n* __moduleDone(name, assertions)__ - called once all test functions within the\n  module have completed (see assertions object reference below)\n  ALL tests within the module\n* __testStart(name)__ - called before a test function is run\n* __testDone(name, assertions)__ - called once a test function has completed\n  (by calling test.done())\n* __log(assertion)__ - called whenever an assertion is made (see assertion\n  object reference below)\n* __done(assertions)__ - called after all tests/modules are complete\n\nThe __assertion__ object:\n\n* __passed()__ - did the assertion pass?\n* __failed()__ - did the assertion fail?\n* __error__ - the AssertionError if the assertion failed\n* __method__ - the nodeunit assertion method used (ok, same, equals...)\n* __message__ - the message the assertion method was called with (optional)\n\nThe __assertionList__ object:\n\n* An array-like object with the following new attributes:\n  * __failures()__ - the number of assertions which failed\n  * __duration__ - the time taken for the test to complete in msecs\n\nFor a reference implementation of a test reporter, see lib/reporters/default.js in\nthe nodeunit project directory.\n\n\nSandbox utility\n---------------\n\nThis is a function which evaluates JavaScript files in a sandbox and returns the\ncontext. The sandbox function can be used for testing client-side code or private\nun-exported functions within a module.\n\n    var sandbox = require(\'nodeunit\').utils.sandbox;\n    var example = sandbox(\'example.js\');\n\n__sandbox(files, sandbox)__ - Evaluates JavaScript files in a sandbox, returning\nthe context. The first argument can either be a single filename or an array of\nfilenames. If multiple filenames are given their contents are concatenated before\nevalution. The second argument is an optional context to use for the sandbox.\n\n\nRunning the nodeunit Tests\n--------------------------\n\nThe tests for nodeunit are written using nodeunit itself as the test framework.\nHowever, the module test-base.js first does some basic tests using the assert\nmodule to ensure that test functions are actually run, and a basic level of\nnodeunit functionality is available.\n\nTo run the nodeunit tests do:\n\n    make test\n\n__Note:__ There was a bug in node v0.2.0 causing the tests to hang, upgrading\nto v0.2.1 fixes this.\n\n\n__machineout__ reporter\n----------------------------------------------\n\nThe default reporter is really readable for human but for machinally analysis. \nWhen you want to analyze the output of nodeunit, use __machineout__ reporter and you will get\n\n<img src="https://github.com/caolan/nodeunit/raw/master/img/example_machineout.png" />\n\n\nnodeunit with vim\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nThere is [nodeunit.vim](https://github.com/lambdalisue/nodeunit.vim) so you can use nodeunit with VIM.\nThat compiler use __machineout__ reporter and it is useful to use with [vim-makegreen](https://github.com/reinh/vim-makegreen)\n\n    \n\nContributing\n------------\n\nContributions to the project are most welcome, so feel free to fork and improve.\nWhen submitting a pull request, please run \'make lint\' first to ensure\nwe\'re following a consistent coding style.\n',
+96 silly resolved     _id: 'nodeunit@0.7.4',
+96 silly resolved     _from: 'nodeunit' },
+96 silly resolved   { name: 'jake',
+96 silly resolved     description: 'JavaScript build tool, similar to Make or Rake',
+96 silly resolved     keywords: [ 'build', 'cli', 'make', 'rake' ],
+96 silly resolved     version: '0.5.8',
+96 silly resolved     author:
+96 silly resolved      { name: 'Matthew Eernisse',
+96 silly resolved        email: 'mde@fleegix.org',
+96 silly resolved        url: 'http://fleegix.org' },
+96 silly resolved     bin: { jake: './bin/cli.js' },
+96 silly resolved     main: './lib/jake.js',
+96 silly resolved     repository: { type: 'git', url: 'git://github.com/mde/jake.git' },
+96 silly resolved     preferGlobal: true,
+96 silly resolved     dependencies: { minimatch: '0.2.x', utilities: '0.0.x' },
+96 silly resolved     devDependencies: {},
+96 silly resolved     engines: { node: '*' },
+96 silly resolved     readme: '### Jake -- JavaScript build tool for Node.js\n\n### Installing with [NPM](http://npmjs.org/)\n\n    npm install -g jake\n\nNote that Jake is a system-level tool, and wants to be installed globally.\n\n### Installing from source\n\nPrerequisites: Jake requires [Node.js](<http://nodejs.org/>), and the\n[utilities](https://npmjs.org/package/utilities) and\n[minimatch](https://npmjs.org/package/minimatch) modules.\n\nGet Jake:\n\n    git clone git://github.com/mde/jake.git\n\nBuild Jake:\n\n    cd jake && make && sudo make install\n\nEven if you\'re installing Jake from source, you\'ll still need NPM for installing\nthe few modules Jake depends on. `make install` will do this automatically for\nyou.\n\nBy default Jake is installed in "/usr/local." To install it into a different\ndirectory (e.g., one that doesn\'t require super-user privilege), pass the PREFIX\nvariable to the `make install` command.  For example, to install it into a\n"jake" directory in your home directory, you could use this:\n\n    make && make install PREFIX=~/jake\n\nIf do you install Jake somewhere special, you\'ll need to add the "bin" directory\nin the install target to your PATH to get access to the `jake` executable.\n\n### Windows, installing from source\n\nFor Windows users installing from source, there are some additional steps.\n\n*Assumed: current directory is the same directory where node.exe is present.*\n\nGet Jake:\n\n    git clone git://github.com/mde/jake.git node_modules/jake\n\nCopy jake.bat and jake to the same directory as node.exe\n\n    copy node_modules/jake/jake.bat jake.bat\n    copy node_modules/jake/jake jake\n\nAdd the directory of node.exe to the environment PATH variable.\n\n### Basic usage\n\n    jake [options ...] [env variables ...] target\n\n### Description\n\n    Jake is a simple JavaScript build program with capabilities similar to the\n    regular make or rake command.\n\n    Jake has the following features:\n        * Jakefiles are in standard JavaScript syntax\n        * Tasks with prerequisites\n        * Namespaces for tasks\n        * Async task execution\n\n### Options\n\n    -V/v\n    --version                   Display the Jake version.\n\n    -h\n    --help                      Display help message.\n\n    -f *FILE*\n    --jakefile *FILE*           Use FILE as the Jakefile.\n\n    -C *DIRECTORY*\n    --directory *DIRECTORY*     Change to DIRECTORY before running tasks.\n\n    -q\n    --quiet                     Do not log messages to standard output.\n\n    -J *JAKELIBDIR*\n    --jakelibdir *JAKELIBDIR*   Auto-import any .jake files in JAKELIBDIR.\n                                (default is \'jakelib\')\n\n    -B\n    --always-make               Unconditionally make all targets.\n\n    -t\n    --trace                     Enable full backtrace.\n\n    -T/ls\n    --tasks                     Display the tasks (matching optional PATTERN)\n                                with descriptions, then exit.\n\n### Jakefile syntax\n\nA Jakefile is just executable JavaScript. You can include whatever JavaScript\nyou want in it.\n\n## API Docs\n\nAPI docs [can be found here](http://mde.github.com/jake/doc/).\n\n## Tasks\n\nUse `task` to define tasks. It has one required argument, the task-name, and\nthree optional arguments:\n\n```javascript\ntask(name, [prerequisites], [action], [opts]);\n```\n\nThe `name` argument is a String with the name of the task, and `prerequisites`\nis an optional Array arg of the list of prerequisite tasks to perform first.\n\nThe `action` is a Function defininng the action to take for the task. (Note that\nObject-literal syntax for name/prerequisites in a single argument a la Rake is\nalso supported, but JavaScript\'s lack of support for dynamic keys in Object\nliterals makes it not very useful.) The action is invoked with the Task object\nitself as the execution context (i.e, "this" inside the action references the\nTask object).\n\nThe `opts` argument is the normal JavaScript-style \'options\' object. When a\ntask\'s operations are asynchronous, the `async` property should be set to\n`true`, and the task must call `complete()` to signal to Jake that the task is\ndone, and execution can proceed. By default the `async` property is `false`.\n\nTasks created with `task` are always executed when asked for (or are a\nprerequisite). Tasks created with `file` are only executed if no file with the\ngiven name exists or if any of its file-prerequisites are more recent than the\nfile named by the task. Also, if any prerequisite is a regular task, the file\ntask will always be executed.\n\nUse `desc` to add a string description of the task.\n\nHere\'s an example:\n\n```javascript\ndesc(\'This is the default task.\');\ntask(\'default\', function (params) {\n  console.log(\'This is the default task.\');\n});\n\ndesc(\'This task has prerequisites.\');\ntask(\'hasPrereqs\', [\'foo\', \'bar\', \'baz\'], function (params) {\n  console.log(\'Ran some prereqs first.\');\n});\n```\n\nAnd here\'s an example of an asynchronous task:\n\n```javascript\ndesc(\'This is an asynchronous task.\');\ntask(\'asyncTask\', {async: true}, function () {\n  setTimeout(complete, 1000);\n});\n```\n\nA Task is also an EventEmitter which emits the \'complete\' event when it is\nfinished. This allows asynchronous tasks to be run from within other asked via\neither `invoke` or `execute`, and ensure they will complete before the rest of\nthe containing task executes. See the section "Running tasks from within other\ntasks," below.\n\n### File-tasks\n\nCreate a file-task by calling `file`.\n\nFile-tasks create a file from one or more other files. With a file-task, Jake\nchecks both that the file exists, and also that it is not older than the files\nspecified by any prerequisite tasks. File-tasks are particularly useful for\ncompiling something from a tree of source files.\n\n```javascript\ndesc(\'This builds a minified JS file for production.\');\nfile(\'foo-minified.js\', [\'bar\', \'foo-bar.js\', \'foo-baz.js\'], function () {\n  // Code to concat and minify goes here\n});\n```\n\n### Directory-tasks\n\nCreate a directory-task by calling `directory`.\n\nDirectory-tasks create a directory for use with for file-tasks. Jake checks for\nthe existence of the directory, and only creates it if needed.\n\n```javascript\ndesc(\'This creates the bar directory for use with the foo-minified.js file-task.\');\ndirectory(\'bar\');\n```\n\nThis task will create the directory when used as a prerequisite for a file-task,\nor when run from the command-line.\n\n### Namespaces\n\nUse `namespace` to create a namespace of tasks to perform. Call it with two arguments:\n\n```javascript\nnamespace(name, namespaceTasks);\n```\n\nWhere is `name` is the name of the namespace, and `namespaceTasks` is a function\nwith calls inside it to `task` or `desc` definining all the tasks for that\nnamespace.\n\nHere\'s an example:\n\n```javascript\ndesc(\'This is the default task.\');\ntask(\'default\', function () {\n  console.log(\'This is the default task.\');\n});\n\nnamespace(\'foo\', function () {\n  desc(\'This the foo:bar task\');\n  task(\'bar\', function () {\n    console.log(\'doing foo:bar task\');\n  });\n\n  desc(\'This the foo:baz task\');\n  task(\'baz\', [\'default\', \'foo:bar\'], function () {\n    console.log(\'doing foo:baz task\');\n  });\n\n});\n```\n\nIn this example, the foo:baz task depends on the the default and foo:bar tasks.\n\n### Passing parameters to jake\n\nParameters can be passed to Jake two ways: plain arguments, and environment\nvariables.\n\nTo pass positional arguments to the Jake tasks, enclose them in square braces,\nseparated by commas, after the name of the task on the command-line. For\nexample, with the following Jakefile:\n\n```javascript\ndesc(\'This is an awesome task.\');\ntask(\'awesome\', function (a, b, c) {\n  console.log(a, b, c);\n});\n```\n\nYou could run `jake` like this:\n\n    jake awesome[foo,bar,baz]\n\nAnd you\'d get the following output:\n\n    foo bar baz\n\nNote that you *cannot* uses spaces between the commas separating the parameters.\n\nAny parameters passed after the Jake task that contain an equals sign (=) will\nbe added to process.env.\n\nWith the following Jakefile:\n\n```javascript\ndesc(\'This is an awesome task.\');\ntask(\'awesome\', function (a, b, c) {\n  console.log(a, b, c);\n  console.log(process.env.qux, process.env.frang);\n});\n```\n\nYou could run `jake` like this:\n\n    jake awesome[foo,bar,baz] qux=zoobie frang=asdf\n\nAnd you\'d get the following output:\n\n    foo bar baz\n    zoobie asdf\nRunning `jake` with no arguments runs the default task.\n\n__Note for zsh users__ : you will need to escape the brackets or wrap in single\nquotes like this to pass parameters :\n\n    jake \'awesome[foo,bar,baz]\'\n\nAn other solution is to desactivate permannently file-globbing for the `jake`\ncommand. You can do this by adding this line to your `.zshrc` file :\n\n    alias jake="noglob jake"\n\n### Cleanup after all tasks run, jake \'complete\' event\n\nThe base \'jake\' object is an EventEmitter, and fires a \'complete\' event after\nrunning all tasks.\n\nThis is sometimes useful when a task starts a process which keeps the Node\nevent-loop running (e.g., a database connection). If you know you want to stop\nthe running Node process after all tasks have finished, you can set a listener\nfor the \'complete\' event, like so:\n\n```javascript\njake.addListener(\'complete\', function () {\n  process.exit();\n});\n```\n\n### Running tasks from within other tasks\n\nJake supports the ability to run a task from within another task via the\n`invoke` and `execute` methods.\n\nThe `invoke` method will run the desired task, along with its prerequisites:\n\n```javascript\ndesc(\'Calls the foo:bar task and its prerequisites.\');\ntask(\'invokeFooBar\', function () {\n  // Calls foo:bar and its prereqs\n  jake.Task[\'foo:bar\'].invoke();\n});\n```\n\nThe `invoke` method will only run the task once, even if you call it repeatedly.\n\n```javascript\ndesc(\'Calls the foo:bar task and its prerequisites.\');\ntask(\'invokeFooBar\', function () {\n  // Calls foo:bar and its prereqs\n  jake.Task[\'foo:bar\'].invoke();\n  // Does nothing\n  jake.Task[\'foo:bar\'].invoke();\n});\n```\n\nThe `execute` method will run the desired task without its prerequisites:\n\n```javascript\ndesc(\'Calls the foo:bar task without its prerequisites.\');\ntask(\'executeFooBar\', function () {\n  // Calls foo:bar without its prereqs\n  jake.Task[\'foo:baz\'].execute();\n});\n```\n\nCalling `execute` repeatedly will run the desired task repeatedly.\n\n```javascript\ndesc(\'Calls the foo:bar task without its prerequisites.\');\ntask(\'executeFooBar\', function () {\n  // Calls foo:bar without its prereqs\n  jake.Task[\'foo:baz\'].execute();\n  // Can keep running this over and over\n  jake.Task[\'foo:baz\'].execute();\n  jake.Task[\'foo:baz\'].execute();\n});\n```\n\nIf you want to run the task and its prerequisites more than once, you can use\n`invoke` with the `reenable` method.\n\n```javascript\ndesc(\'Calls the foo:bar task and its prerequisites.\');\ntask(\'invokeFooBar\', function () {\n  // Calls foo:bar and its prereqs\n  jake.Task[\'foo:bar\'].invoke();\n  // Does nothing\n  jake.Task[\'foo:bar\'].invoke();\n  // Only re-runs foo:bar, but not its prerequisites\n  jake.Task[\'foo:bar\'].reenable();\n  jake.Task[\'foo:bar\'].invoke();\n});\n```\n\nThe `reenable` method takes a single Boolean arg, a \'deep\' flag, which reenables\nthe task\'s prerequisites if set to true.\n\n```javascript\ndesc(\'Calls the foo:bar task and its prerequisites.\');\ntask(\'invokeFooBar\', function () {\n  // Calls foo:bar and its prereqs\n  jake.Task[\'foo:bar\'].invoke();\n  // Does nothing\n  jake.Task[\'foo:bar\'].invoke();\n  // Re-runs foo:bar and all of its prerequisites\n  jake.Task[\'foo:bar\'].reenable(true);\n  jake.Task[\'foo:bar\'].invoke();\n});\n```\n\nIt\'s easy to pass params on to a sub-task run via `invoke` or `execute`:\n\n```javascript\ndesc(\'Passes params on to other tasks.\');\ntask(\'passParams\', function () {\n  var t = jake.Task[\'foo:bar\'];\n  // Calls foo:bar, passing along current args\n  t.invoke.apply(t, arguments);\n});\n```\n\n### Evented tasks\n\nTasks are EventEmitters. They can fire \'complete\' and \'error\' events.\n\nIf a task called via `invoke` is asynchronous, you can set a listener on the\n\'complete\' event to run any code that depends on it.\n\n```javascript\ndesc(\'Calls the async foo:baz task and its prerequisites.\');\ntask(\'invokeFooBaz\', {async: true}, function () {\n  var t = jake.Task[\'foo:baz\'];\n  t.addListener(\'complete\', function () {\n    console.log(\'Finished executing foo:baz\');\n    // Maybe run some other code\n    // ...\n    // Complete the containing task\n    complete();\n  });\n  // Kick off foo:baz\n  t.invoke();\n});\n```\n\nIf you want to handle the errors in a task in some specific way, you can set a\nlistener for the \'error\' event, like so:\n\n```javascript\nnamespace(\'vronk\', function () {\n  task(\'groo\', function () {\n    var t = jake.Task[\'vronk:zong\'];\n    t.addListener(\'error\', function (e) {\n      console.log(e.message);\n    });\n    t.invoke();\n  });\n\n  task(\'zong\', function () {\n    throw new Error(\'OMFGZONG\');\n  });\n});\n```\n\nIf no specific listener is set for the "error" event, errors are handled by\nJake\'s generic error-handling.\n\n### Aborting a task\n\nYou can abort a task by calling the `fail` function, and Jake will abort the\ncurrently running task. You can pass a customized error message to `fail`:\n\n```javascript\ndesc(\'This task fails.\');\ntask(\'failTask\', function () {\n  fail(\'Yikes. Something back happened.\');\n});\n```\n\nYou can also pass an optional exit status-code to the fail command, like so:\n\n```javascript\ndesc(\'This task fails with an exit-status of 42.\');\ntask(\'failTaskQuestionCustomStatus\', function () {\n  fail(\'What is the answer?\', 42);\n});\n```\n\nThe process will exit with a status of 42.\n\nUncaught errors will also abort the currently running task.\n\n### Showing the list of tasks\n\nPassing `jake` the -T or --tasks flag will display the full list of tasks\navailable in a Jakefile, along with their descriptions:\n\n    $ jake -T\n    jake default       # This is the default task.\n    jake asdf          # This is the asdf task.\n    jake concat.txt    # File task, concating two files together\n    jake failure       # Failing task.\n    jake lookup        # Jake task lookup by name.\n    jake foo:bar       # This the foo:bar task\n    jake foo:fonebone  # This the foo:fonebone task\n\nSetting a value for -T/--tasks will filter the list by that value:\n\n    $ jake -T foo\n    jake foo:bar       # This the foo:bar task\n    jake foo:fonebone  # This the foo:fonebone task\n\nThe list displayed will be all tasks whose namespace/name contain the filter-string.\n\n## Breaking things up into multiple files\n\nJake will automatically look for files with a .jake extension in a \'jakelib\'\ndirectory in your project, and load them (via `require`) after loading your\nJakefile. (The directory name can be overridden using the -J/--jakelibdir\ncommand-line option.)\n\nThis allows you to break your tasks up over multiple files -- a good way to do\nit is one namespace per file: e.g., a `zardoz` namespace full of tasks in\n\'jakelib/zardox.jake\'.\n\nNote that these .jake files each run in their own module-context, so they don\'t\nhave access to each others\' data. However, the Jake API methods, and the\ntask-hierarchy are globally available, so you can use tasks in any file as\nprerequisites for tasks in any other, just as if everything were in a single\nfile.\n\nEnvironment-variables set on the command-line are likewise also naturally\navailable to code in all files via process.env.\n\n## File-utils\n\nSince shelling out in Node is an asynchronous operation, Jake comes with a few\nuseful file-utilities with a synchronous API, that make scripting easier.\n\nThe `jake.mkdirP` utility recursively creates a set of nested directories. It\nwill not throw an error if any of the directories already exists. Here\'s an example:\n\n```javascript\njake.mkdirP(\'app/views/layouts\');\n```\n\nThe `jake.cpR` utility does a recursive copy of a file or directory. It takes\ntwo arguments, the file/directory to copy, and the destination. Note that this\ncommand can only copy files and directories; it does not perform globbing (so\narguments like \'*.txt\' are not possible).\n\n```javascript\njake.cpR(path.join(sourceDir, \'/templates\'), currentDir);\n```\n\nThis would copy \'templates\' (and all its contents) into `currentDir`.\n\nThe `jake.readdirR` utility gives you a recursive directory listing, giving you\noutput somewhat similar to the Unix `find` command. It only works with a\ndirectory name, and does not perform filtering or globbing.\n\n```javascript\njake.readdirR(\'pkg\');\n```\n\nThis would return an array of filepaths for all files in the \'pkg\' directory,\nand all its subdirectories.\n\nThe `jake.rmRf` utility recursively removes a directory and all its contents.\n\n```javascript\njake.rmRf(\'pkg\');\n```\n\nThis would remove the \'pkg\' directory, and all its contents.\n\n## Running shell-commands: `jake.exec` and `jake.createExec`\n\nJake also provides a more general utility function for running a sequence of\nshell-commands.\n\n### `jake.exec`\n\nThe `jake.exec` command takes an array of shell-command strings, and an optional\ncallback to run after completing them. Here\'s an example from Jake\'s Jakefile,\nthat runs the tests:\n\n```javascript\ndesc(\'Runs the Jake tests.\');\ntask(\'test\', {async: true}, function () {\n  var cmds = [\n    \'node ./tests/parseargs.js\'\n  , \'node ./tests/task_base.js\'\n  , \'node ./tests/file_task.js\'\n  ];\n  jake.exec(cmds, function () {\n    console.log(\'All tests passed.\');\n    complete();\n  }, {printStdout: true});\n});\n```\n\nIt also takes an optional options-object, with the following options:\n\n* `printStdout` (print to stdout, default false)\n\n* `printStderr` (print to stderr, default false)\n\n* `breakOnError` (stop execution on error, default true)\n\nThis command doesn\'t pipe input between commands -- it\'s for simple execution.\n\n### `jake.createExec` and the evented Exec object\n\nJake also provides an evented interface for running shell commands. Calling\n`jake.createExec` returns an instance of `jake.Exec`, which is an `EventEmitter`\nthat fires events as it executes commands.\n\nIt emits the following events:\n\n* \'cmdStart\': When a new command begins to run. Passes one arg, the command\nbeing run.\n\n* \'cmdEnd\': When a command finishes. Passes one arg, the command\nbeing run.\n\n* \'stdout\': When the stdout for the child-process recieves data. This streams\nthe stdout data. Passes one arg, the chunk of data.\n\n* \'stderr\': When the stderr for the child-process recieves data. This streams\nthe stderr data. Passes one arg, the chunk of data.\n\n* \'error\': When a shell-command exits with a non-zero status-code. Passes two\nargs -- the error message, and the status code. If you do not set an error\nhandler, and a command exits with an error-code, Jake will throw the unhandled\nerror. If `breakOnError` is set to true, the Exec object will emit and \'error\'\nevent after the first error, and stop any further execution.\n\nTo begin running the commands, you have to call the `run` method on it. It also\nhas an `append` method for adding new commands to the list of commands to run.\n\nHere\'s an example:\n\n```javascript\nvar ex = jake.createExec([\'do_thing.sh\'], {printStdout: true});\nex.addListener(\'error\', function (msg, code) {\n  if (code == 127) {\n    console.log("Couldn\'t find do_thing script, trying do_other_thing");\n    ex.append(\'do_other_thing.sh\');\n  }\n  else {\n    fail(\'Fatal error: \' + msg, code);\n  }\n});\nex.run();\n```\n\nUsing the evented Exec object gives you a lot more flexibility in running shell\ncommmands. But if you need something more sophisticated, Procstreams\n(<https://github.com/polotek/procstreams>) might be a good option.\n\n## Logging and output\n\nUsing the -q/--quiet flag at the command-line will stop Jake from sending its\nnormal output to standard output. Note that this only applies to built-in output\nfrom Jake; anything you output normally from your tasks will still be displayed.\n\nIf you want to take advantage of the -q/--quiet flag in your own programs, you\ncan use `jake.logger.log` and `jake.logger.error` for displaying output. These\ntwo commands will respect the flag, and suppress output correctly when the\nquiet-flag is on.\n\nYou can check the current value of this flag in your own tasks by using\n`jake.program.opts.quiet`. If you want the output of a `jake.exec` shell-command\nto respect the quiet-flag, set your `printStdout` and `printStderr` options to\nfalse if the quiet-option is on:\n\n```javascript\ntask(\'echo\', {async: true}, function () {\n  jake.exec([\'echo "hello"\'], function () {\n    jake.logger.log(\'Done.\');\n    complete();\n  }, {printStdout: !jake.program.opts.quiet});\n});\n```\n\n## PackageTask\n\nInstantiating a PackageTask programmically creates a set of tasks for packaging\nup your project for distribution. Here\'s an example:\n\n```javascript\nvar t = new jake.PackageTask(\'fonebone\', \'v0.1.2112\', function () {\n  var fileList = [\n    \'Jakefile\'\n  , \'README.md\'\n  , \'package.json\'\n  , \'lib/*\'\n  , \'bin/*\'\n  , \'tests/*\'\n  ];\n  this.packageFiles.include(fileList);\n  this.needTarGz = true;\n  this.needTarBz2 = true;\n});\n```\n\nThis will automatically create a \'package\' task that will assemble the specified\nfiles in \'pkg/fonebone-v0.1.2112,\' and compress them according to the specified\noptions. After running `jake package`, you\'ll have the following in pkg/:\n\n    fonebone-v0.1.2112\n    fonebone-v0.1.2112.tar.bz2\n    fonebone-v0.1.2112.tar.gz\n\nPackageTask also creates a \'clobber\' task that removes the pkg/\ndirectory.\n\nThe [PackageTask API\ndocs](http://mde.github.com/jake/doc/symbols/jake.PackageTask.html) include a\nlot more information, including different archiving options.\n\n### FileList\n\nJake\'s FileList takes a list of glob-patterns and file-names, and lazy-creates a\nlist of files to include. Instead of immediately searching the filesystem to\nfind the files, a FileList holds the pattern until it is actually used.\n\nWhen any of the normal JavaScript Array methods (or the `toArray` method) are\ncalled on the FileList, the pending patterns are resolved into an actual list of\nfile-names. FileList uses the [minimatch](https://github.com/isaacs/minimatch) module.\n\nTo build the list of files, use FileList\'s `include` and `exclude` methods:\n\n```javascript\nvar list = new jake.FileList();\nlist.include(\'foo/*.txt\');\nlist.include([\'bar/*.txt\', \'README.md\']);\nlist.include(\'Makefile\', \'package.json\');\nlist.exclude(\'foo/zoobie.txt\');\nlist.exclude(/foo\\/src.*.txt/);\nconsole.log(list.toArray());\n```\n\nThe `include` method can be called either with an array of items, or multiple\nsingle parameters. Items can be either glob-patterns, or individual file-names.\n\nThe `exclude` method will prevent files from being included in the list. These\nfiles must resolve to actual files on the filesystem. It can be called either\nwith an array of items, or mutliple single parameters. Items can be\nglob-patterns, individual file-names, string-representations of\nregular-expressions, or regular-expression literals.\n\n## TestTask\n\nInstantiating a TestTask programmically creates a simple task for running tests\nfor your project. The first argument of the constructor is the project-name\n(used in the description of the task), and the second argument is a function\nthat defines the task. It allows you to specifify what files to run as tests,\nand what to name the task that gets created (defaults to "test" if unset).\n\n```javascript\nvar t = new jake.TestTask(\'fonebone\', function () {\n  var fileList = [\n    \'tests/*\'\n  , \'lib/adapters/**/test.js\'\n  ];\n  this.testFiles.include(fileList);\n  this.testFiles.exclude(\'tests/helper.js\');\n  this.testName = \'testMainAndAdapters\';\n});\n```\n\nTests in the specified file should be in the very simple format of\ntest-functions hung off the export. These tests are converted into Jake tasks\nwhich Jake then runs normally.\n\nIf a test needs to run asynchronously, simply define the test-function with a\nsingle argument, a callback. Jake will define this as an asynchronous task, and\nwill wait until the callback is called in the test function to run the next test.\n\nHere\'s an example test-file:\n\n```javascript\nvar assert = require(\'assert\')\n  , tests;\n\ntests = {\n  \'sync test\': function () {\n    // Assert something\n    assert.ok(true);\n  }\n, \'async test\': function (next) {\n    // Assert something else\n    assert.ok(true);\n    // Won\'t go next until this is called\n    next();\n  }\n, \'another sync test\': function () {\n    // Assert something else\n    assert.ok(true);\n  }\n};\n\nmodule.exports = tests;\n```\n\nJake\'s tests are also a good example of use of a TestTask.\n\n## NpmPublishTask\n\nThe NpmPublishTask builds on top of PackageTask to allow you to do a version\nbump of your project, package it, and publish it to NPM. Define the task with\nyour project\'s name, and the list of files you want packaged and published to\nNPM.\n\nHere\'s an example from Jake\'s Jakefile:\n\n```javascript\nvar p = new jake.NpmPublishTask(\'jake\', [\n  \'Makefile\'\n, \'Jakefile\'\n, \'README.md\'\n, \'package.json\'\n, \'lib/*\'\n, \'bin/*\'\n, \'tests/*\'\n]);\n```\n\nThe NpmPublishTask will automatically create a `publish` task which performs the\nfollowing steps:\n\n1. Bump the version number in your package.json\n2. Commit change in git, push it to GitHub\n3. Create a git tag for the version\n4. Push the tag to GitHub\n5. Package the new version of your project\n6. Publish it to NPM\n7. Clean up the package\n\n## CoffeeScript Jakefiles\n\nJake can also handle Jakefiles in CoffeeScript. Be sure to make it\nJakefile.coffee so Jake knows it\'s in CoffeeScript.\n\nHere\'s an example:\n\n```coffeescript\nutil = require(\'util\')\n\ndesc \'This is the default task.\'\ntask \'default\', (params) ->\n  console.log \'Ths is the default task.\'\n  console.log(util.inspect(arguments))\n  jake.Task[\'new\'].invoke []\n\ntask \'new\', ->\n  console.log \'ello from new\'\n  jake.Task[\'foo:next\'].invoke [\'param\']\n\nnamespace \'foo\', ->\n  task \'next\', (param) ->\n    console.log \'ello from next with param: \' + param\n```\n\n## Related projects\n\nJames Coglan\'s "Jake": <http://github.com/jcoglan/jake>\n\nConfusingly, this is a Ruby tool for building JavaScript packages from source code.\n\n280 North\'s Jake: <http://github.com/280north/jake>\n\nThis is also a JavaScript port of Rake, which runs on the Narwhal platform.\n\n### License\n\nLicensed under the Apache License, Version 2.0\n(<http://www.apache.org/licenses/LICENSE-2.0>)\n',
+96 silly resolved     _id: 'jake@0.5.8',
+96 silly resolved     _from: 'jake' } ]
+97 info install jshint@1.0.0 into /usr/local/lib
+98 info install nodeunit@0.7.4 into /usr/local/lib
+99 info install jake@0.5.8 into /usr/local/lib
+100 info installOne jshint@1.0.0
+101 info installOne nodeunit@0.7.4
+102 info installOne jake@0.5.8
+103 verbose from cache /home/gmarler/.npm/jshint/1.0.0/package/package.json
+104 verbose from cache /home/gmarler/.npm/nodeunit/0.7.4/package/package.json
+105 info /usr/local/lib/node_modules/jshint unbuild
+106 verbose read json /usr/local/lib/node_modules/jshint/package.json
+107 info /usr/local/lib/node_modules/nodeunit unbuild
+108 verbose read json /usr/local/lib/node_modules/nodeunit/package.json
+109 verbose tar unpack /home/gmarler/.npm/jshint/1.0.0/package.tgz
+110 verbose tar unpack /home/gmarler/.npm/nodeunit/0.7.4/package.tgz
+111 silly lockFile 60c9d5e1-sr-local-lib-node-modules-jshint /usr/local/lib/node_modules/jshint
+112 verbose lock /usr/local/lib/node_modules/jshint /home/gmarler/.npm/60c9d5e1-sr-local-lib-node-modules-jshint.lock
+113 silly lockFile 57054438--local-lib-node-modules-nodeunit /usr/local/lib/node_modules/nodeunit
+114 verbose lock /usr/local/lib/node_modules/nodeunit /home/gmarler/.npm/57054438--local-lib-node-modules-nodeunit.lock
+115 silly gunzTarPerm modes [ '755', '644' ]
+116 silly gunzTarPerm modes [ '755', '644' ]
+117 error Error: EACCES, mkdir '/usr/local/lib/node_modules/jshint'
+117 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/jshint']
+117 error   errno: 3,
+117 error   code: 'EACCES',
+117 error   path: '/usr/local/lib/node_modules/jshint',
+117 error   fstream_type: 'Directory',
+117 error   fstream_path: '/usr/local/lib/node_modules/jshint',
+117 error   fstream_class: 'DirWriter',
+117 error   fstream_stack:
+117 error    [ 'DirWriter._create (/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23)',
+117 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:51:17',
+117 error      'Object.oncomplete (fs.js:297:15)' ] }
+118 error Please try running this command again as root/Administrator.
+119 error System Linux 3.7.6-201.fc18.x86_64
+120 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "jake" "jshint" "nodeunit"
+121 error cwd /home/gmarler/gitwork/weewikipaint
+122 error node -v v0.8.4
+123 error npm -v 1.1.45
+124 error path /usr/local/lib/node_modules/jshint
+125 error fstream_path /usr/local/lib/node_modules/jshint
+126 error fstream_type Directory
+127 error fstream_class DirWriter
+128 error code EACCES
+129 error errno 3
+130 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/jshint'
+131 error fstream_stack DirWriter._create (/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23)
+131 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:51:17
+131 error fstream_stack Object.oncomplete (fs.js:297:15)
+132 verbose exit [ 3, true ]
