@@ -5,5 +5,15 @@ var http = require("http");
 
 
 exports.start = function() {
-    console.log("started :)");
+    var http = require("http");
+
+    var server = http.createServer();
+
+    server.on("request", function(request, response) {
+
+    });
+
+    server.listen(8080);
+
+    console.log("Server started");
 };
