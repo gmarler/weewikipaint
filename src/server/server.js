@@ -13,7 +13,7 @@ exports.start = function() {
         response.end();
     });
 
-    server.listen(8080);  // TODO: Remove duplication
+    server.listen(8080);
 };
 
 exports.stop = function(callback) {
