@@ -16,7 +16,7 @@ exports.tearDown = function(done) {
 
 
 exports.test_serverReturnsHelloWorld = function(test) {
-    server.start();  // TODO: Remove duplication?
+    server.start(8080);
 
     var request = http.get("http://localhost:8080");
     request.on("response", function(response) {
