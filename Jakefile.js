@@ -63,6 +63,7 @@
             stdout += chunk;
         });
         process.on("cmdEnd", function() {
+            console.log();
             callback(stdout);
         });
         process.run();
