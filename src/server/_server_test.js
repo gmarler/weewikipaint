@@ -31,9 +31,16 @@ exports.test_serverServesAFile = function(test) {
     var testDir = "generated/test";
     var testFile = testDir + "/test.html";
 
-    fs.writeFileSync(testFile, "Hello World");
+    try {
+        fs.writeFileSync(testFile, "Hello World");
+        test.done();
+    } finally {
+        fs.unlinkSync(testFile);
+        test.ok(!fs.existsSync(testFile), "file should have been deleted");
+    }
 
-    test.done();
+
+
     // TODO
 };
 
