@@ -17,36 +17,62 @@
         done();
     };
 
-    exports.test_serverServesHomePageFromFile = function(test) {
+    exports.test_ServesHomePageFromFile = function(test) {
         var testDir = "generated/test";
-        var testData = "This is served from a file";
+        var expectedData = "This is served from a file";
 
-        fs.writeFileSync(TEST_FILE, testData);
+        fs.writeFileSync(TEST_FILE, expectedData);
         httpGet("http://localhost:8080", function(response,responseData) {
             test.equals(200, response.statusCode, "status code");
-            test.equals(testData, responseData, "response text");
+            test.equals(expectedData, responseData, "response text");
             test.done();
         });
     };
 
-    exports.test_serverReturns404ForEverythingExceptHomePage = function(test) {
+    exports.test_Returns404ForEverythingExceptHomePage = function(test) {
         httpGet("http://localhost:8080/bargle", function(response, responseData) {
             test.equals(404, response.statusCode, "status code");
             test.done();
         });
     };
 
-    exports.test_serverReturnsHomePageWhenAskedForIndex = function(test) {
+    exports.test_ReturnsHomePageWhenAskedForIndex = function(test) {
         var testDir = "generated/test";
-        var testData = "This is served from a file";
+        fs.writeFileSync(TEST_FILE, "foo");
 
-        fs.writeFileSync(TEST_FILE, testData);
         httpGet("http://localhost:8080/index.html", function(response,responseData) {
             test.equals(200, response.statusCode, "status code");
-            test.equals(testData, responseData, "response text");
             test.done();
         });
 
+    };
+
+    exports.test_RequiresFileParameter = function(test) {
+        test.throws(function() {
+            server.start();
+        });
+        test.done();
+    };
+
+    exports.test_RequiresPortNumber = function(test) {
+        test.throws(function() {
+            server.start(TEST_FILE);
+        });
+        test.done();
+    };
+
+    exports.test_RunsCallbackWhenStopCompletes = function(test) {
+        server.start(TEST_FILE, 8080);
+        server.stop(function() {
+            test.done();
+        });
+    };
+
+    exports.test_stopThrowsExceptionWhenNotRunning = function(test) {
+        test.throws(function() {
+            server.stop();
+        });
+        test.done();
     };
 
     function httpGet(url, callback) {
@@ -66,33 +92,5 @@
             });
         });
     }
-
-    exports.test_serverRequiresFileToServe = function(test) {
-        test.throws(function() {
-            server.start();
-        });
-        test.done();
-    };
-
-    exports.test_serverRequiresPortNumber = function(test) {
-        test.throws(function() {
-            server.start(TEST_FILE);
-        });
-        test.done();
-    };
-
-    exports.test_serverRunsCallbackWhenStopCompletes = function(test) {
-        server.start(TEST_FILE, 8080);
-        server.stop(function() {
-            test.done();
-        });
-    };
-
-    exports.test_stopCalledWhenServerIsntRunningThrowsException = function(test) {
-        test.throws(function() {
-            server.stop();
-        });
-        test.done();
-    };
 
 }());
