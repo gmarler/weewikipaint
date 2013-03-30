@@ -8,11 +8,12 @@ Minimum Marketable Features:
 - more collaborative features?
 
 User Stories:
-- marketing copy
-- Publish to Internet
+- Marketing copy
+* Publish to Internet
 
 Engineering Tasks:
--
+- Write end-to-end integration test
+- Write server launch code
 
 To Do on current task:
 -
