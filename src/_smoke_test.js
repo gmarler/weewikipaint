@@ -26,12 +26,18 @@
     exports.test_canGetHomePage = function (test) {
         httpGet("http://localhost:8080", function (response, receivedData) {
             var foundHomePage = receivedData.indexOf("WeeWikiPaint home page") !== -1;
-            test.ok(foundHomePage, "home page should have contained WeeWikiPaint marker");
+            test.ok(foundHomePage, "home page should have contained test marker");
             test.done();
         });
     };
 
-    // TODO: Check 404 page
+    exports.test_canGet404Page = function(test) {
+        httpGet("http://localhost:8080/nonexistent.html", function (response, receivedData) {
+            var foundHomePage = receivedData.indexOf("WeeWikiPaint 404 page") !== -1;
+            test.ok(foundHomePage, "404 page should have contained test marker");
+            test.done();
+        });
+    };
 
     function runServer(callback) {
         child = child_process.spawn("node", ["src/server/weewikipaint", "8080"]);
@@ -41,7 +47,6 @@
         });
     }
 
-    // TODO: eliminate duplication w/ _server_test.js
     function httpGet(url, callback) {
         var request = http.get(url);
         request.on("response", function (response) {
@@ -56,24 +61,5 @@
             });
         });
     }
-
-    /*function httpGet(url, callback) {    // TODO: duplicated with _server_test.js
-        server.start(TEST_HOME_PAGE, TEST_404_PAGE, 8080);
-        var request = http.get(url);
-        request.on("response", function (response) {
-            var receivedData = "";
-            response.setEncoding("utf8"); // To ensure chunk is a string
-
-            response.on("data", function (chunk) {
-                receivedData += chunk;
-            });
-            response.on("end", function () {
-                server.stop(function () {
-                    callback(response, receivedData);
-                });
-            });
-        });
-    }*/
-
 
 }());
